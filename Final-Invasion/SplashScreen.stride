@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class name="SplashScreen" extends="World" extends-java="World" enable="true" strideversion="1">
+    <javadoc xml:space="preserve">Write a description of class SplashScreen here.
+@author (your name) @version (a version number or a date)</javadoc>
+    <imports>
+        <import target="greenfoot.*" enable="true"/>
+    </imports>
+    <implements/>
+    <fields/>
+    <constructors>
+        <comment xml:space="preserve">(World, Actor, GreenfootImage, Greenfoot and MouseInfo)</comment>
+        <constructor access="public" enable="true">
+            <javadoc xml:space="preserve">Constructor for objects of class SplashScreen.</javadoc>
+            <params/>
+            <throws/>
+            <delegate target="super" params="800,800,1" params-java="800, 800, 1"/>
+            <body>
+                <call expression="showText(&quot;Vanier College&quot;,200,500)" expression-java="showText(&quot;Vanier College&quot;, 200, 500)" enable="true"/>
+                <comment xml:space="preserve">Create a new world with 600x400 cells with a cell size of 1x1 pixels.</comment>
+            </body>
+        </constructor>
+    </constructors>
+    <methods>
+        <method access="public" type="void" type-java="void" name="showTextWithBigPurpleFont" enable="true">
+            <javadoc xml:space="preserve"/>
+            <params>
+                <param type="String" type-java="String" name="message"/>
+                <param type="int" type-java="int" name="x"/>
+                <param type="int" type-java="int" name="y"/>
+            </params>
+            <throws/>
+            <body>
+                <variable type="GreenfootImage" type-java="GreenfootImage" name="bg" value="getBackground()" value-java="getBackground()" enable="true"/>
+                <variable type="Font" type-java="Font" name="font" value="new Font(100)" value-java=" new Font(100)" enable="true"/>
+                <call expression="bg.setFont(font)" expression-java="bg.setFont(font)" enable="true"/>
+                <call expression="bg.setColor(Color.WHITE)" expression-java="bg.setColor(Color.WHITE)" enable="true"/>
+                <call expression="bg.drawString(&quot;Vanier College&quot;,200,500)" expression-java="bg.drawString(&quot;Vanier College&quot;, 200, 500)" enable="true"/>
+            </body>
+        </method>
+    </methods>
+</class>
